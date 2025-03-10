@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: hsl(218, 100%, 33%);
+    color: hsl(218, 100%, 33%);
+}
+
+section {
+    max-width: 1000px;
+    margin-inline: auto;
+    display: grid;
+    height: 100dvh;
+    grid-template-columns: 1fr 150px 1fr;
+    justify-items: center;
+    align-content: center;
+    background: hsl(0, 0%, 100%);
+}
+
+.scoreboard {
+
+    & img {
+        width: 200px;
+    }
+}
+
+.score-container{
+    background: hsl(218, 100%, 33%);
+    color: hsl(0, 0%, 100%);
+    aspect-ratio: 1 / 1;
+    margin-block: 24px 32px;
+    text-align: center;
+    align-content: center;
+    border-radius: 8px;
+
+    & p {
+        font-size: clamp(18px, 4vi, 52px);
+        font-weight: bold;
+    }
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & button {
+        cursor: pointer;
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: bold;
+        background: transparent;
+        color:hsl(218, 100%, 33%);
+        border: 2px solid hsl(218, 100%, 33%);
+        border-radius: 8px;
+        padding: .5em;
+    }
+}
+
+.accessories {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    & button {
+        width: 100%;
+        cursor: pointer;
+        background: hsl(350, 85%, 42%);
+        color: hsl(0, 0%, 100%);
+        font-family: inherit;
+        font-size: .9rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        border: transparent;
+        border-radius: 8px;
+        padding: .75em 1em;
+    }
+
+    & .start-game-btn--start {
+        background: hsl(218, 100%, 33%);
+        color: hsl(0, 0%, 100%);
+        margin-block-start: .5rem;
+    }
+}
+
+.timer-bg {
+    background: hsl(218, 100%, 33%);
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+    text-align: center;
+    padding: 0.75em 1em;
+    border-radius: 8px;
+
+    & p {
+        font-weight: bold;
+        font-size: 2rem;
+    }
+}
+
+.highligth {
+    background: hsl(350, 85%, 42%);
+    color: hsl(0, 0%, 100%);
+}

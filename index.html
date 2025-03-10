@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Basketball Scoreboard</title>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="scoreboard">
+                 <img src="/logo-76.svg" alt="">
+                <div id="home-score-container" class="score-container">
+                    <p id="home-score"></p>
+                </div>
+                <div class="btn-container">
+                    <button id="home-one-pt-btn">+ 1</button>
+                    <button id="home-two-pt-btn">+ 2</button>
+                    <button id="home-three-pt-btn">+ 3</button>
+                </div>
+            </div>
+
+            <div class="accessories">
+                <div id="timer-bg" class="timer-bg">
+                    <p id="timer-el"></p>
+                </div>
+                <div>
+                    <button id="new-game-btn">new game</button>
+                    <button id="start-game-btn" class="start-game-btn--start">start game</button>
+                </div>
+            </div>
+            <div class="scoreboard">
+                 <img src="/logo-guest.svg" alt="">
+                <div id="guest-score-container" class="score-container">
+                    <p id="guest-score"></p>
+                </div>
+                <div class="btn-container">
+                    <button id="guest-one-pt-btn">+ 1</button>
+                    <button id="guest-two-pt-btn">+ 2</button>
+                    <button id="guest-three-pt-btn">+ 3</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="/index.js"></script>
+</body>
+</html>
